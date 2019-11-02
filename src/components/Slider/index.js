@@ -1,7 +1,8 @@
 import React from "react";
 
-import {  } from "./styles";
+import { Wrapper } from "./styles";
 
 export const Slider = () => (
+    <Wrapper/>
 
 );

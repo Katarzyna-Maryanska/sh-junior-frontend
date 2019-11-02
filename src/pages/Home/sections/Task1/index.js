@@ -1,4 +1,4 @@
-lsimport React from "react";
+import React from "react";
 
 import { ExamplePreview } from "components/ExamplePreview";
 import * as Section from "components/PageSection";

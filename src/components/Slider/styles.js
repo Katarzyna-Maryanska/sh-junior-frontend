@@ -2,11 +2,15 @@ import React from "react";
 import styled from "styled-components";
 
 export const Wrapper = styled.div`
+  width: 100vw;
   height: 8rem;
-  margin: 0 auto;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
   display: flex;
   align-items: center;
-  position: relative;
    &:before {
     content: "";
     top: 0;

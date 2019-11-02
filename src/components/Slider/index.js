@@ -7,12 +7,11 @@ import slide5 from "./assets/photos/slide-5.jpg"
 import { Wrapper, Image } from "./styles";
 
 export const Slider = () => (
-    <Wrapper>
-        <Image src={slide1}/>
-        <Image src={slide2}/>
-        <Image src={slide3}/>
-        <Image src={slide4}/>
-        <Image src={slide5}/>
-    </Wrapper>
-
+<Wrapper>
+  <Image src={slide1}/>
+  <Image src={slide2}/>
+  <Image src={slide3}/>
+  <Image src={slide4}/>
+  <Image src={slide5}/>
+</Wrapper>
 );

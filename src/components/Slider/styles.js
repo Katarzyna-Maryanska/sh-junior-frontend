@@ -22,7 +22,13 @@ export const Wrapper = styled.div`
     position: absolute;
     height: 100%;
     width: 100%;
-    background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(255, 255, 255, 1)), color-stop(30%, rgba(255, 255, 255, 0)), color-stop(70%, rgba(255, 255, 255, 0)), color-stop(100%, rgba(255, 255, 255, 1)));
+    background: -webkit-gradient(
+      linear, left top, right top, 
+      color-stop(0%, rgba(255, 255, 255, 1)),
+      color-stop(30%, rgba(255, 255, 255, 0)), 
+      color-stop(70%, rgba(255, 255, 255, 0)), 
+      color-stop(100%, rgba(255, 255, 255, 1))
+    );
 `;
 
 export const ImageTrain = styled.div`
@@ -38,5 +44,5 @@ export const Image = styled.img`
   width: auto;
   height: 100%;
   border-radius: 10px;
-  margin: 0px 6px;
+  margin: 0 6px;
 `;

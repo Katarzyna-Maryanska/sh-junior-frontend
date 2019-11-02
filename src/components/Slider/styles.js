@@ -1,8 +1,25 @@
-// import React from "react";
+import React from "react";
 import styled from "styled-components";
 
 export const Wrapper = styled.div`
-  background: green;
-  height: 10rem;
+  height: 8rem;
   margin: 0 auto;
+  display: flex;
+  align-items: center;
+  position: relative;
+   &:before {
+    content: "";
+    top: 0;
+    left: 0;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(255, 255, 255, 1)), color-stop(30%, rgba(255, 255, 255, 0)), color-stop(70%, rgba(255, 255, 255, 0)), color-stop(100%, rgba(255, 255, 255, 1)));
+`;
+
+export const Image = styled.img`
+  width: auto;
+  height: 100%;
+  border-radius: 10px;
+  margin: 0px 6px;
 `;

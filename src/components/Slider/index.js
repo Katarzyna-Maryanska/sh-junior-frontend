@@ -1,17 +1,28 @@
 import React from "react";
-import slide1 from "./assets/photos/slide-1.jpg"
-import slide2 from "./assets/photos/slide-2.jpg"
-import slide3 from "./assets/photos/slide-3.jpg"
-import slide4 from "./assets/photos/slide-4.jpg"
-import slide5 from "./assets/photos/slide-5.jpg"
+import images from './images';
 import { Wrapper, Image } from "./styles";
+
+function calculateNumberOfImageGroups() {
+  const availableScreenWidth = window.screen.availWidth;
+  const imageWidth = 184;
+  const neededImagesCount = Math.ceil(availableScreenWidth/imageWidth);
+  const availableImagesCount = images.length;
+
+  return Math.ceil(neededImagesCount/availableImagesCount);
+}
+
+const numberOfImageGroups = calculateNumberOfImageGroups() + 1;
+console.log(numberOfImageGroups);
+
+const imageComponentsGroup =  images.map((image) => <Image src={image}/>);
+let imageComponents = [];
+for (let i = 1; i <= numberOfImageGroups; i++ ) {
+  imageComponents = [... imageComponents, ... imageComponentsGroup];
+}
 
 export const Slider = () => (
 <Wrapper>
-  <Image src={slide1}/>
-  <Image src={slide2}/>
-  <Image src={slide3}/>
-  <Image src={slide4}/>
-  <Image src={slide5}/>
+  {imageComponents}
 </Wrapper>
 );
+

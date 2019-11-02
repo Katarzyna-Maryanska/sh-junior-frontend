@@ -21,11 +21,10 @@ function createImagesForTrain(images) {
       imagesCollection.push(images.map(image => <Image src={image}/>));
     }
 
-    return [... imagesCollection, ...imagesCollection, ...imagesCollection];
+    return [...imagesCollection, ...imagesCollection, ...imagesCollection];
 }
 
 const imageCollection = createImagesForTrain(images);
-
 
 export const Slider = () => (
     <Wrapper>

@@ -13,8 +13,6 @@ export const UserTitle = styled.h2`
 `;
 
 export const Image = styled.img`
-  width: auto;
   height: 20rem;
   border-radius: 10px;
-  margin: 0 6px;
 `;

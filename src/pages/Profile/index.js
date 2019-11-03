@@ -1,7 +1,10 @@
 import React from "react";
+import { GithubUser } from "./../../components/GithubUser"
 
 export const Profile = () => (
+
   <div>
-    <h1>Profile</h1>
+    <GithubUser/>
   </div>
 );
+

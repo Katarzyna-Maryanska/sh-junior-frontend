@@ -8,10 +8,10 @@ export const Header = () => (
       <Logo />
       <Navbar>
         <li>
-          <NavLink href={"#"}>Start</NavLink>
+          <NavLink to={"/"}>Start</NavLink>
         </li>
         <li>
-          <NavLink href={"#"}>My Profile</NavLink>
+          <NavLink to={"/my-profile"}>Profile</NavLink>
         </li>
       </Navbar>
     </Wrapper>

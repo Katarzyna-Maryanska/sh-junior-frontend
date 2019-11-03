@@ -1,7 +1,8 @@
 import React from "react";
 import styled from "styled-components";
-
+import {Link} from "react-router-dom";
 import logoImg from "./assets/logo.svg";
+
 
 export const Logo = () => <img alt="Startup Development House" src={logoImg} />;
 
@@ -14,7 +15,7 @@ export const Navbar = styled.ul`
   align-items: center;
 `;
 
-export const NavLink = styled.a`
+export const NavLink = styled(Link)`
   font-size: ${({ theme }) => theme.font.size.md};
   color: ${({theme}) => theme.color.black};
   font-weight: ${({ theme }) => theme.font.weight.normal};

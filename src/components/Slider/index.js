@@ -18,7 +18,7 @@ function createImagesForTrain(images) {
 
     const imagesCollection = [];
     for (let i = 1; i <= repetitionCount; i++) {
-      imagesCollection.push(images.map(image => <Image src={image}/>));
+      imagesCollection.push(images.map((image, index) => <Image src={image} key={index}/>));
     }
 
     return [...imagesCollection, ...imagesCollection, ...imagesCollection];

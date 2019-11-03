@@ -6,8 +6,8 @@ export const GithubUser = () => {
   const [userName, setUserName] = useState("");
   const [userAvatar, setUserAvatar] = useState("");
 
-  const clientId = "b230ad57d59bda3c688d";
-  const clientSecret = "672caeda97d28472f55317912836a2176177e648";
+  const clientId = process.env.REACT_APP_GITHUB_CLIENT_ID;
+  const clientSecret = process.env.REACT_APP_GITHUB_CLIENT_SECRET;
 
   function getUser() {
     return new Promise((resolve, reject) => {
